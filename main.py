@@ -28,7 +28,7 @@ def TakeCommand():
     return query.lower()
 
 def TaskExe():
-
+ 
     while True:
 
         query = TakeCommand()
@@ -45,6 +45,9 @@ def TaskExe():
 
         elif 'temperature' in query:
             Temperature.Temp()
+
+            
+                  
         else:
             print("none")
 
