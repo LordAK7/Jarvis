@@ -2,6 +2,8 @@ import pyttsx3
 import speech_recognition as sr
 import webbrowser
 from Features import  Temperature 
+import os 
+import random
 
 def Speak(audio):
     engine = pyttsx3.init('sapi5') #sapi5 for windows , espeak for linux -i dont linke the sound of espeak so using sapi 5 
@@ -46,7 +48,12 @@ def TaskExe():
         elif 'temperature' in query:
             Temperature.Temp()
 
-            
+        elif 'play music' in query:
+            music_folder = "C:\\Users\\vijay\\OneDrive\\Desktop\\Jarvis-Git\\main.py\\Database\\"
+            music = ['hokage', 'oski', 'rocstar']
+            random_music = music_folder + random.choice(music) + '.mp3'
+            os.system(random_music)
+            Speak('Okay, here is your music! Enjoy!')
                   
         else:
             print("none")
