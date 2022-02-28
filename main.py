@@ -1,11 +1,12 @@
 import pyttsx3
 import speech_recognition as sr
 import webbrowser
+from Features import  Temperature 
 
 def Speak(audio):
-    engine = pyttsx3.init('sapi5')
+    engine = pyttsx3.init('sapi5') #sapi5 for windows , espeak for linux -i dont linke the sound of espeak so using sapi 5 
     voices = engine.getProperty('voices')
-    engine.setProperty('voice',voices[1].id)
+    engine.setProperty('voice',voices[1].id) #sapi 5 voice id
     print(" ")
     print(f": {audio}")
     engine.say(audio)
@@ -15,7 +16,7 @@ def Speak(audio):
 def TakeCommand():
 
     r = sr.Recognizer()
-    with sr.Microphone(device_index=1) as source:
+    with sr.Microphone(device_index=1) as source: #device index for multiple microphones
         print(": Listening....")
         audio = r.listen(source)
     try:
@@ -42,6 +43,8 @@ def TaskExe():
             webbrowser.open(web2)
             Speak("Launched!")
 
+        elif 'temperature' in query:
+            Temperature.Temp()
         else:
             print("none")
 
