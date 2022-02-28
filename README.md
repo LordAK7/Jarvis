@@ -12,6 +12,7 @@ Just A Rather Very Intelligent System
 # When contributing to this reprository keep in mined the following:
 
 1.Dont forget to add comments to the code.
+
 2.If its a big code split it into multiple files as we want to keep it fast.
 
 # The Future of This project:
