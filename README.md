@@ -9,12 +9,12 @@ Just A Rather Very Intelligent System
 
 2.Anyone can contribute to this project. (As this is module-based, anybody with a decent knowledge of Python can contribute.) One of the prime goals of this project is to lower the entry barrier into the world of open source.
 
-# Whem contributing to this reprository keep in mined the following:
+# When contributing to this reprository keep in mined the following:
 
 1.Dont forget to add comments to the code.
 2.If its a big code split it into multiple files as we want to keep it fast.
 
-# The Future of This project is 
+# The Future of This project:
 
 1.I want to keep it fast
 2.In future after all the base code is written we will try to convert this in real A.i using artificial inteligence, machine learning .deep learning .
