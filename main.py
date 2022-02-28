@@ -1,9 +1,11 @@
 import pyttsx3
 import speech_recognition as sr
 import webbrowser
-from Features import  Temperature 
+from Features import Temperature 
+from Features import SearchWeb
 import os 
 import random
+
 
 def Speak(audio):
     engine = pyttsx3.init('sapi5') #sapi5 for windows , espeak for linux -i dont linke the sound of espeak so using sapi 5 
@@ -45,8 +47,14 @@ def TaskExe():
             webbrowser.open(web2)
             Speak("Launched!")
 
-        elif 'temperature' in query:
+        elif 'temperature' in query or 'weather' in query:
             Temperature.Temp()
+
+        elif 'youtube search' in query or 'youtube' in query:
+            Query = query.lower()
+            Query = query.replace("youtube search","")
+            Query = query.replace("youtube search","")
+            SearchWeb.YoutubeSearch(Query)
 
         elif 'play music' in query:
             music_folder = "C:\\Users\\vijay\\OneDrive\\Desktop\\Jarvis-Git\\main.py\\Database\\"
