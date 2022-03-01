@@ -36,3 +36,11 @@ def YoutubeSearch(Query):
     Speak("Enjoy your video sir!")
     pywhatkit.playonyt(Query)
     Speak("This may also be good for you")
+
+def Image(Query):
+    try:
+        url = "https://photos.google.com/" + Query
+        web.open(url)
+    except Exception as e:
+        print(e)
+        return False

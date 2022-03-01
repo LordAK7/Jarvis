@@ -62,6 +62,11 @@ def TaskExe():
             random_music = music_folder + random.choice(music) + '.mp3'
             os.system(random_music)
             Speak('Okay, here is your music! Enjoy!')
+
+        elif 'image' in query:
+            Query = query.replace("image search")
+            SearchWeb.Image(Query)
+
                   
         else:
             print("none")
