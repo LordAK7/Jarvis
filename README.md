@@ -39,14 +39,14 @@ Features to be addded
 - Can hide all files in a folder and also make them visible again
 
 
-# Jarvis Mark 4 - Adding more usefull features (future)
+# Jarvis Mark 3 - Adding more usefull features (future)
 
 Features to be addded
 
 - interfacing arduino sensor control
 - Dht11 sesnor and soil moisture sensor input (it will say termperature from temperature sensor in ur room)
 
-# Jarvis Mark 3 - Adding more usefull features (future)
+# Jarvis Mark 4 - Adding more usefull features (future)
 
 Features to be addded
 
